@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Pokémons Favoritos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1>Meus Pokémons favoritos!</h1>
+    </header>
+    
+    <main>
+        <div class="title">
+            <h2>Meus pokémons</h2>
+            <span>Adicione seu time!</span>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" required>
+            </div>
+            <div class="lineInput">
+                <label for="tipo">Tipo</label>
+                <input type="text" id="tipo" required>
+            </div>
+            <div class="lineInput">
+                <label for="evolui">Evoluções</label>
+                <input type="number" id="evolui" required>
+            </div>
+
+            <button onclick="pokemon.salvar()" id="btn-1">Salvar</button>
+            <button onclick="pokemon.cancelar()">Cancelar</button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th class="center">Nome</th>
+                    <th class="center">Evoluções</th>
+                    <th class="center">Tipo</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <tbody id="tbody">
+                   
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

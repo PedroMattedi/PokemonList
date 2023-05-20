@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url('./img/ash.png');
+    background-position: initial;
+    background-size: 2000px 970px;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: rgba(49, 49, 255, 0.973);
+    padding: 10px;
+    color: aliceblue;
+    text-align: center;
+}
+
+main{
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    background-color: red;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 600px;
+}
+
+.lineInput{
+    display: grid;
+    margin-bottom: 30px;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: 0;
+}
+
+button{
+    border: 0;
+    padding: 10px;
+    outline: 0;
+    background-color: aliceblue;
+    opacity: 0.8;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover{
+    opacity: 1;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.content{
+    margin-top: 15px;
+    max-height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgba(49, 49, 255, 0.973);
+    border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-thumb{
+    background-color: blue;
+    border-radius: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 700px;
+}
+
+
+table th{
+    background-color: red;
+    padding: 8px;
+}
+
+table td{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+table td img{
+    width: 22px;
+}
+
+.center{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 730px){
+    .card{
+        width:90%;
+    }
+
+    table{
+        width: 400px;
+    }
+}
+
+@media (max-width: 500px){
+    .card{
+        width:90%;
+    }
+
+    table{
+        width: 300px;
+    }
+}
